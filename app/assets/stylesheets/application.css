@@ -33,9 +33,15 @@ body {
 
 #logo  {
     margin-bottom: 5px;
+    float: left
+}
+
+#users {
+    float: right;
 }
 
 #navigation_wrapper {
+    clear: both;
     background-color: #0076a3;
     height: 40px;
 }
@@ -56,7 +62,7 @@ body {
     display: inline;
 }
 
-#content {
+#stage {
     background-color: #fff;
     min-height: 500px;
     padding: 20px;
@@ -68,6 +74,24 @@ body {
     font-size: 90%;
     color: #606060;
     margin-top: 10px;
+}
+
+#featured {
+    width: 600px;
+    border: 10px solid #212021;
+    padding: 20px;
+}
+
+#content {
+    width: 650px;
+    float: left;
+
+}
+
+#sidebar {
+    width: 260px;
+    float: right;
+    padding-left: 25px;
 }
 
 

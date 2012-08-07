@@ -1,10 +1,15 @@
 Sportsbook::Application.routes.draw do
 
+  devise_for :users
+
+  resources :picks
+
   resources :blogs do
     resources :comments
   end
 
   match "/blogs" => "blogs#index"
+  match "/picks" => "picks#index"
 
 
   # The priority is based upon order of creation:

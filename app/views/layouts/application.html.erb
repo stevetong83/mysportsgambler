@@ -10,18 +10,17 @@
 
 <div id="wrapper">
   <div id="header">
-    <div id="logo">
-      <h1><%=	 link_to image_tag('chrislogo.jpg'), root_path %></h1>
-    </div>
-    <div id="navigation_wrapper">
-        <%=	 render "layouts/nav_menu" %>
-    </div>
+    <%=	 render "layouts/header" %>
   </div>
 
-    <div id="content">
+    <div id="stage">
 
+      <%	 if flash[:notice] %>
+            <%=	 flash[:notice] %>
+      <%	 end %>
+        <%= yield %>
 
-<%= yield %>
+      
 
   </div>
 

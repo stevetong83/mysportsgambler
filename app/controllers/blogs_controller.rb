@@ -1,4 +1,8 @@
 class BlogsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+  load_and_authorize_resource :except => [:index, :show]
+
+
   def index
     @blogs = Blog.all
   end
@@ -8,7 +12,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.create params[:blog]
+    @blog = current_user.blogs.build params[:blog]
     if @blog.save
       flash[:notice] = "Blog has been created"
       redirect_to @blog

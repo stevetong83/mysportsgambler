@@ -1,3 +1,4 @@
+<div id="content">
 <h1><%=	 @blog.title %></h1>
 Written by <%=	 @blog.author %> on <%=	 @blog.created_at.strftime("%m/%d/%Y") %>
 <br />
@@ -6,4 +7,10 @@ Written by <%=	 @blog.author %> on <%=	 @blog.created_at.strftime("%m/%d/%Y") %>
 
 <div id="content_format">
   <%=	 @blog.body %>
+</div>
+
+</div>
+
+<div id="sidebar">
+  <%=	 render "blogs/blogs_sidebar" %>
 </div>
