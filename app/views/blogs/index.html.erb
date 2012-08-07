@@ -1,0 +1,13 @@
+<h1>Blog Roll</h1>
+
+<%=	 link_to "New", new_blog_path %>
+
+<%	 @blogs.each do |blog| %>
+    
+    <h4><%=	 link_to blog.title, blog %></h4>
+    Written by: <%=	 blog.author %> at <%=	 blog.created_at.strftime("%m/%d/%Y") %>
+    <div id="content_format">
+      <%=	 blog.body.slice(0..450) %>....
+    </div>
+
+<%	 end %>

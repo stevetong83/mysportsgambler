@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=	 page_title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><%=	 link_to image_tag('chrislogo.jpg'), root_path %></h1>
+    </div>
+    <div id="navigation_wrapper">
+        <%=	 render "layouts/nav_menu" %>
+    </div>
+  </div>
+
+    <div id="content">
+
+
+<%= yield %>
+
+  </div>
+
+</div>
+
+</body>
+</html>
