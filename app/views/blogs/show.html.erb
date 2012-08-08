@@ -6,11 +6,22 @@ Written by <%=	 @blog.author %> on <%=	 @blog.created_at.strftime("%m/%d/%Y") %>
 <%=	 link_to "Delete", @blog, confirm: "Are you sure?", method: :delete %>
 
 <div id="content_format">
-  <%=	 @blog.body %>
+  <%=	 simple_format(@blog.body) %>
 </div>
+
+  <div>
+    <h3>Comments</h3>
+
+    <%=	 render @blog.comments %>
+
+
+    <%=	 render :file => "comments/new" %>
+  </div>
 
 </div>
 
 <div id="sidebar">
   <%=	 render "blogs/blogs_sidebar" %>
 </div>
+
+<div id="content_footer"></div>

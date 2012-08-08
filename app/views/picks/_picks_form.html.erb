@@ -1,0 +1,17 @@
+<%=	 form_for @pick do |f| %>
+
+    <p>
+    <%=	 f.label :game %><br />
+    <%=	 f.text_field :game %>
+    </p>
+    
+    <p>
+      <%=	 f.label :analysis %><br />
+      <%=	 f.text_area :analysis %>
+    </p>
+    
+    <p>
+      <%=	 f.submit "Submit Pick" %>
+    </p>
+
+<%  end %>

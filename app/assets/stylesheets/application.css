@@ -27,7 +27,6 @@ body {
 }
 
 #header {
-
     color: #fff;
 }
 
@@ -64,9 +63,17 @@ body {
 
 #stage {
     background-color: #fff;
-    min-height: 500px;
     padding: 20px;
     color: #212021;
+    min-height: 500px;
+}
+
+#notice {
+    color: green;
+}
+
+#error {
+    color: red;
 }
 
 #content_format {
@@ -85,13 +92,16 @@ body {
 #content {
     width: 650px;
     float: left;
-
 }
 
 #sidebar {
     width: 260px;
     float: right;
     padding-left: 25px;
+}
+
+#content_footer {
+    clear: both;
 }
 
 

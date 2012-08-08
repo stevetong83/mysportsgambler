@@ -1,3 +1,7 @@
+<div id="content">
+
+  <%=	 link_to "New Pick", new_pick_path %>
+
 <div id="featured">
 
   <h1>Featured Pick</h1>
@@ -9,5 +13,15 @@
 
     Aly Raisman won gold on the floor exercise and bronze on the balance beam on Tuesday.
     Good thing Raisman did so well, because the rest of the Americans came up empty-handed. Douglas had another rough day, finishing seventh on balance beam after a fall. World champion Jordyn Wieber, voted most likely to leave the Olympics with the biggest haul, was seventh on floor and finished without any individual medals.</p>
-
 </div>
+
+  <div>
+    <h3>Upcoming Picks</h3>
+  </div>
+</div>
+
+<div id="sidebar">
+  <%=	 render "picks/picks_sidebar" %>
+</div>
+
+<div id="content_footer"></div>
