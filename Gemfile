@@ -6,9 +6,8 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'sqlite3'
 gem 'thin'
-gem 'heroku'
+
 
 
 # Gems used only for assets and not required
@@ -28,6 +27,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 gem 'will_paginate'
+gem 'heroku'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
