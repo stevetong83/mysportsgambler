@@ -7,6 +7,8 @@ gem 'rails', '3.2.6'
 
 gem 'pg'
 gem 'sqlite3'
+gem 'thin'
+gem 'heroku'
 
 
 # Gems used only for assets and not required
