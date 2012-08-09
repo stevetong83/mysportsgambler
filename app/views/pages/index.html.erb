@@ -18,12 +18,28 @@
 
 </div>
 
-<div>
-  Static homepage text about the website
+<div id="homepage_content">
+  <h2>Welcome to My Sports Gambler</h2>
+
+  Awesome sports picks and expert articles
+
 </div>
 
-<div>
-  <h2>Blogs</h2>
+<div id="blog_roll_list">
+  <h3>Recent Posts</h3>
+
+
+
+        <%	 @blogs.each do |blog| %>
+
+        <h5><%=	 link_to blog.title, blog %></h5>
+      <div id="blog_roll_item">
+        <%=	 blog.body.slice(0..150) %>...
+
+       </div>
+
+         <%	 end %>
+
 </div>
 </div>
 

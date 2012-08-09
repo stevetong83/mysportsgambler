@@ -8,4 +8,8 @@ class Blog < ActiveRecord::Base
   belongs_to :user
   has_many :comments, :dependent => :destroy
 
+  def to_param
+    "#{id}-#{title.gsub(/\W/, '-').downcase}"
+  end
+
 end

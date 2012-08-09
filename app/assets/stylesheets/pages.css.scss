@@ -1,3 +1,39 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#blog_roll_list {
+  background: #efefef;
+  padding: 10px;
+}
+
+#blog_roll_item {
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  font-size: 80%;
+  color: #606060;
+  margin-top: 5px;
+}
+
+#homepage_content {
+  padding: 10px;
+}
+
+
+#blog_roll_list a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#blog_roll_list a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#blog_roll_list a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}

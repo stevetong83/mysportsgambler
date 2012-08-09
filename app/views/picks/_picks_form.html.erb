@@ -1,4 +1,8 @@
+<div id="pick">
+
 <%=	 form_for @pick do |f| %>
+
+    <%=	 render "layouts/error_messages", :target => @pick %>
 
     <p>
     <%=	 f.label :game %><br />
@@ -6,12 +10,27 @@
     </p>
     
     <p>
-      <%=	 f.label :analysis %><br />
-      <%=	 f.text_area :analysis %>
+      <%=	 f.label :game_day, "Game Date" %><br />
+      <%=	 f.text_field :game_day %>
     </p>
+    
+    <p>
+      <%=	 f.label :pick %><br />
+      <%=	 f.text_field :pick %>
+    </p>
+    
+    <p>
+      <%=	 f.label :analysis %><br />
+      <%=	 f.text_area :analysis, :cols => "100" %>
+    </p>
+      
+      <p>
+        <%=	 f.check_box :featured %>
+      </p>
     
     <p>
       <%=	 f.submit "Submit Pick" %>
     </p>
 
 <%  end %>
+</div>

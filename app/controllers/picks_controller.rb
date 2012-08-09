@@ -21,7 +21,9 @@ class PicksController < ApplicationController
   end
 
   def show
+    @picks = Pick.all
     @pick = Pick.find params[:id]
+    @page_title = "#{@pick.game} | My Sports Gambler"
   end
 
   def edit

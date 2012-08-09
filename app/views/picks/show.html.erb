@@ -1,2 +1,34 @@
-<h1>Picks#show</h1>
-<p>Find me in app/views/picks/show.html.erb</p>
+<div id="content">
+<h1>Game: <%=	 @pick.game %></h1>
+
+<%	 if user_signed_in? %>
+    <%	 if current_user.has_role? :admin%>
+
+        <%=	 link_to "Edit", edit_pick_path(@pick) %> |
+        <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %>
+
+    <%	 end %>
+<%	 end %>
+
+<p>
+  <b>Game Date:</b> <%=	 @pick.game_day.strftime("%m/%d/%Y") %>
+</p>
+
+<p>
+  <b>Pick:</b> <%=	 @pick.pick %>
+</p>
+
+
+  <b>Analysis:</b>
+  <div id="content_format">
+  <%=	 simple_format(@pick.analysis) %>
+  </div>
+
+</div>
+
+<div id="sidebar">
+  <%=	 render "picks/picks_sidebar" %>
+</div>
+
+<div id="content_footer"></div>
+

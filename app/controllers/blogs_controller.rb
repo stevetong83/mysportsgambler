@@ -5,6 +5,7 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
+    @page_title = "My Sports Gambler Blog"
   end
 
   def new
@@ -22,7 +23,9 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @blogs = Blog.all
     @blog = Blog.find params[:id]
+    @page_title = "#{@blog.title} | My Sports Gambler"
   end
 
   def edit

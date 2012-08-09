@@ -12,8 +12,12 @@
  *= require_tree .
  */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     margin: 0 0 5px 0;
+}
+
+h1, h2 {
+    color: #0076a3;
 }
 body {
     background-color: #212021;
@@ -48,17 +52,38 @@ body {
 #navigation {
     color: #fff;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 #navigation ul {
     margin: 0;
     padding: 0;
 
+
 }
 
 #navigation li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+
+#navigation a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+
+#navigation a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 #stage {
@@ -84,24 +109,82 @@ body {
 }
 
 #featured {
-    width: 600px;
     border: 10px solid #212021;
     padding: 20px;
 }
 
 #content {
-    width: 650px;
+    width: 615px;
     float: left;
 }
 
-#sidebar {
-    width: 260px;
-    float: right;
-    padding-left: 25px;
-}
+
 
 #content_footer {
     clear: both;
 }
+
+/*** Sidebars ***/
+
+#sidebar {
+    width: 325px;
+    float: right;
+    padding-left: 20px;
+}
+
+#record {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #efefef;
+}
+
+#history {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #efefef;
+}
+
+#history_sidebar {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 90%;
+}
+
+#sidebar a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+#sidebar a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+#blog_posts {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #efefef;
+}
+
+#posts_sidebar {
+    margin-top: 15px;
+
+}
+
+#posts_list {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 90%;
+}
+
 
 

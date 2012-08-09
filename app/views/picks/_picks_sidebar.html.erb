@@ -1,1 +1,24 @@
-<h2 align="center">Pick History</h2>
+<div id="record">
+
+<h4>Picks Record</h4>
+  <hr />
+  <b>Past 30 Days:</b><br />
+  0 Wins 0 Losses<br />
+  <br />
+  <b>Overall Record:</b><br />
+  0 Wins 0 Losses
+
+</div>
+
+<div id="history">
+<h4 align="center">Picks History</h4>
+  <hr />
+
+  <%	 @picks.each do |pick| %>
+     <div id="history_sidebar">
+       <%=	 link_to pick.game, pick %>
+     </div>
+
+
+  <%	 end %>
+</div>

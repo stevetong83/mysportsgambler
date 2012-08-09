@@ -1,1 +1,19 @@
-<h3 align="center">Blog Sidebar</h3>
+<div id="blog_posts">
+<h4 align="center">Recent Posts</h4>
+  <hr />
+
+  <div id="posts_sidebar">
+
+  <%	 @blogs.each do |blog| %>
+
+        <div id="posts_list">
+
+      <%=	 link_to blog.title, blog %>
+
+        </div>
+      <%	 end %>
+
+  </div>
+
+</div>
+
