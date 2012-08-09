@@ -22,19 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="31" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+            <state line="17" column="30" selection-start="643" selection-end="643" vertical-scroll-proportion="0.34486875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="50" selection-start="693" selection-end="693" vertical-scroll-proportion="0.32458234">
+            <state line="15" column="66" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,8 +73,8 @@
         <option value="$PROJECT_DIR$/app/models/pick.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -856,16 +856,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+        <state line="15" column="66" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="50" selection-start="693" selection-end="693" vertical-scroll-proportion="0.32458234">
+        <state line="17" column="30" selection-start="643" selection-end="643" vertical-scroll-proportion="0.34486875">
           <folding />
         </state>
       </provider>
