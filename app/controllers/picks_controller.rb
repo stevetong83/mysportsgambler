@@ -1,16 +1,25 @@
 class PicksController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
-  load_and_authorize_resource :except => [:index, :show]
+  load_and_authorize_resource :except => [:index, :show, :history, :picklist]
 
   def index
     @picks = Pick.order("game_day DESC").limit(10)
-
-
-      @upcoming_picks = Pick.order("game_day ASC")
-
+    @upcoming_picks = Pick.order("game_day ASC")
     @featured_post = Pick.featured
-
+    @page_title = "Sports Picks | My Sports Gambler"
   end
+
+  def history
+    @picks = Pick.order("game_day DESC").all
+    @page_title = "My Sports Gambler Pick History"
+  end
+
+  def picklist
+    @picks = Pick.order("game_day DESC").all
+    @upcoming_picks = Pick.order("game_day ASC")
+    @page_title = "My Sports Gambler Upcoming Picks"
+  end
+
 
   def new
     @pick = Pick.new
@@ -27,7 +36,7 @@ class PicksController < ApplicationController
   end
 
   def show
-    @picks = Pick.all
+    @picks = Pick.order("game_day DESC").limit(10)
     @pick = Pick.find params[:id]
     @page_title = "#{@pick.game} | My Sports Gambler"
   end

@@ -6,6 +6,8 @@
   <%= javascript_include_tag "application" %>
 
   <%= csrf_meta_tags %>
+  <%=	 favicon_link_tag("ace.ico") %>
+
 </head>
 <body>
 
@@ -17,13 +19,13 @@
     <div id="stage">
 
       <%	 if flash[:notice] %>
-          <div id="notice">
+          <div id="success_message">
             <%=	 flash[:notice] %>
           </div>
       <%	 end %>
 
       <%	 if flash[:error] %>
-          <div id="error">
+          <div id="error_message">
             <%=	 flash[:error] %>
           </div>
       <%	 end %>

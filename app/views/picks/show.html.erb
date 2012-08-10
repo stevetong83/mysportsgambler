@@ -18,6 +18,14 @@
   <b>Pick:</b> <%=	 @pick.pick %>
 </p>
 
+  <%	 unless @pick.outcome.nil? %>
+  
+  <p>
+    <b>Outcome: </b><%=	 @pick.outcome %>
+  </p>
+
+      <%	 end %>
+
 
   <b>Analysis:</b>
   <div id="content_format">

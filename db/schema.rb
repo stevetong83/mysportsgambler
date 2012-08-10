@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120809211115) do
+ActiveRecord::Schema.define(:version => 20120810164520) do
 
   create_table "blogs", :force => true do |t|
     t.integer  "user_id"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20120809211115) do
     t.datetime "updated_at", :null => false
     t.datetime "game_day"
     t.boolean  "featured"
+    t.string   "outcome"
   end
 
   create_table "roles", :force => true do |t|

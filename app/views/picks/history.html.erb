@@ -1,0 +1,29 @@
+<div id="content">
+
+<h1>Pick History</h1>
+
+<%	 @picks.each do |pick| %>
+
+    <%	 if pick.game_day < Time.now - 1.day %>
+        <div id="picks">
+          <b>Game: </b><%=	 link_to pick.game, pick %><br />
+          <b>Date: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y") %></span><br />
+          <b>Pick: </b><span class="format"><%=	 pick.pick %></span><br />
+          <b>Outcome: </b><span class="format"><%=	 pick.outcome %></span>
+        </div>
+
+    <%	 end %>
+
+
+
+<%	 end %>
+</div>
+
+<div id="sidebar">
+
+  <div id="record">
+    <%=	 render "picks/picks_record" %>
+  </div>
+</div>
+
+<div id="content_footer"></div>

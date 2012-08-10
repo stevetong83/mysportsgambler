@@ -14,18 +14,21 @@
     <h2>Upcoming Picks</h2>
 
     <%	 @upcoming_picks.each do |pick| %>
+        <%	 if pick.game_day > Time.now - 1.day %>
 
-        <%	 if pick.game_day > Time.now %>
-
-    <h4>Game: <%=	 link_to pick.game, pick %></h4>
-        <b>Game Day:</b> <%=	 pick.game_day.strftime("%m/%d/%Y")  %>
-        <br /><br />
+            <div id="picks_list">
+                <b>Game: </b><%=	 link_to pick.game, pick %><br />
+                <b>Game Day: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
+            </div>
 
             <%	 end %>
         <%	 end %>
+
+    <p align="center">
+    <%=	 link_to "See All", upcomingpicks_path %>
+    </p>
   </div>
 
-  <%=	 Time.now %>
 </div>
 
 <div id="sidebar">

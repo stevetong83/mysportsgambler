@@ -98,14 +98,6 @@ body {
     min-height: 500px;
 }
 
-#notice {
-    color: green;
-}
-
-#error {
-    color: red;
-}
-
 #content_format {
   line-height: 1.5em;
     font-size: 90%;
@@ -113,14 +105,17 @@ body {
     margin-top: 10px;
 }
 
-#featured {
-    border: 10px solid #212021;
-    padding: 20px;
-}
+
 
 #content {
     width: 615px;
     float: left;
+}
+
+.format {
+    line-height: 1.5em;
+    font-size: 90%;
+    color: #606060;
 }
 
 
@@ -191,5 +186,57 @@ body {
     font-size: 90%;
 }
 
+/*** Flash Notice ***/
 
+#success_message {
+    color: #4F8A10;
+    background-color: #cfc;
+    border: 1px solid #9c9;
+    padding: 10px;
+    margin: 0px 25px 10px 0px;
+    border-radius: 5px;
+}
+
+#error_message {
+    color: #D63301;
+    background-color: #FFCCBA;
+    border: 1px solid #D63301;
+    margin: 0px 25px 10px 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*** Featured Pick Box ***/
+
+#featured {
+    border: 10px solid #212021;
+    padding: 20px;
+}
+
+#featured a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+#featured a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+#featured a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0076a3;
+}
+
+
+
+/*** spacing ***/
+
+.wide_line {
+    width: 300px;
+}
 

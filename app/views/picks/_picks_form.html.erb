@@ -18,6 +18,11 @@
       <%=	 f.label :pick %><br />
       <%=	 f.text_field :pick %>
     </p>
+      
+      <p>
+        <%=	 f.label :outcome %>:
+        <%=	 f.select :outcome, %w(Win Loss), :include_blank => true %>
+      </p>
     
     <p>
       <%=	 f.label :analysis %><br />

@@ -1,0 +1,23 @@
+<div id="content">
+
+  <h1>Upcoming Picks</h1>
+
+  <%	 @upcoming_picks.each do |pick| %>
+      <%	 if pick.game_day > Time.now - 1.day %>
+
+          <div id="picks">
+            <b>Game: </b><%=	 link_to pick.game, pick %><br />
+            <b>Game Day: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
+          </div>
+
+      <%	 end %>
+  <%	 end %>
+
+</div>
+
+
+<div id="sidebar">
+  <%=	 render "picks/picks_sidebar" %>
+</div>
+
+<div id="content_footer"></div>

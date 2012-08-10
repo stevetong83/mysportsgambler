@@ -10,6 +10,8 @@ Sportsbook::Application.routes.draw do
 
   match "/blogs" => "blogs#index"
   match "/picks" => "picks#index"
+  match "/pickhistory" => "picks#history"
+  match "/upcomingpicks" => "picks#picklist"
 
 
   # The priority is based upon order of creation:

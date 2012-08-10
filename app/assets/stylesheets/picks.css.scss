@@ -4,6 +4,7 @@
 
 #picks_content {
   margin-top: 10px;
+  background: #efefef;
   padding: 10px;
 }
 
@@ -20,6 +21,34 @@
 }
 
 #picks_content a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#picks_list {
+  margin-top: 15px;
+}
+
+#picks {
+  font-size: 90%;
+  margin-top: 20px;
+}
+
+
+#picks a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#picks a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#picks a:visited {
   text-decoration: none;
   font-weight: bold;
   color: #0076a3;
