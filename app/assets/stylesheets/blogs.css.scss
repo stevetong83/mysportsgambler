@@ -1,3 +1,24 @@
 // Place all the styles related to the Blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#blog_roll {}
+
+#blog_roll a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#blog_roll a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#blog_roll a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}

@@ -1,17 +1,22 @@
 class PicksController < ApplicationController
+
+  before_filter :records, :except => [:new, :create, :edit, :update, :destroy]
   before_filter :authenticate_user!, :except => [:index, :show]
   load_and_authorize_resource :except => [:index, :show, :history, :picklist]
 
   def index
     @picks = Pick.order("game_day DESC").limit(10)
-    @upcoming_picks = Pick.order("game_day ASC")
+    @upcoming_picks = Pick.order("game_day ASC").limit(8)
     @featured_post = Pick.featured
+
+
     @page_title = "Sports Picks | My Sports Gambler"
   end
 
   def history
     @picks = Pick.order("game_day DESC").all
     @page_title = "My Sports Gambler Pick History"
+
   end
 
   def picklist
@@ -23,6 +28,7 @@ class PicksController < ApplicationController
 
   def new
     @pick = Pick.new
+    @page_title = "Create Sports Pick"
   end
 
   def create
@@ -43,6 +49,7 @@ class PicksController < ApplicationController
 
   def edit
     @pick = Pick.find params[:id]
+    @page_title = "Edit Pick"
   end
 
   def update
@@ -61,6 +68,15 @@ class PicksController < ApplicationController
     @pick.destroy
     flash[:notice] = "Pick has been deleted"
     redirect_to picks_path
+  end
+
+  protected
+
+  def records
+    @picks_win = Pick.count(:conditions => ['outcome = ?', 'Win'])
+    @picks_loss = Pick.count(:conditions => ['outcome = ?', 'Loss'])
+    @picks_win_thirty = Pick.where('game_day >= ?', 30.days.ago).where('outcome = ?', 'Win' ).count
+    @picks_loss_thirty = Pick.where('game_day >= ?', 30.days.ago).where('outcome = ?', 'Loss' ).count
   end
 
 end

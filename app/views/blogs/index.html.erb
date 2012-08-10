@@ -8,12 +8,18 @@
     <%	 end %>
 <%	 end %>
 
+<div id="blog_roll">
+
 <%	 @blogs.each do |blog| %>
-    
+   
+      <p>
     <h3><%=	 link_to blog.title, blog %></h3>
-    Written by: <%=	 blog.author %> at <%=	 blog.created_at.strftime("%m/%d/%Y") %>
+    <span class="format">Written by: <%=	 blog.author %> on <%=	 blog.created_at.strftime("%m/%d/%Y") %></span>
     <div id="content_format">
       <%=	 blog.body.slice(0..450) %>....
     </div>
+      </p>
 
 <%	 end %>
+
+</div>
