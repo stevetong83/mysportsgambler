@@ -1,0 +1,17 @@
+<h1>Featured Pick</h1>
+
+
+
+<%	 @featured_post.order(["created_at DESC"])[0,1].each do |pick| %>
+
+    <b>Game:</b> <%=	 pick.game %><br />
+    <b>Game Day:</b><%=	 pick.game_day.strftime("%m/%d/%Y")  %><br />
+    <b>Pick:</b> <%=	 pick.pick %><br />
+
+    <div id="content_format">
+     <%=	 pick.analysis.slice(0..500) %> <%=	 link_to "more", pick %>
+    </div>
+    <%	 end %>
+
+
+

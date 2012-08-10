@@ -15,9 +15,13 @@
   <hr />
 
   <%	 @picks.each do |pick| %>
+
+      <%	 if pick.game_day < Time.now %>
      <div id="history_sidebar">
        <%=	 link_to pick.game, pick %>
      </div>
+
+          <%	 end %>
 
 
   <%	 end %>

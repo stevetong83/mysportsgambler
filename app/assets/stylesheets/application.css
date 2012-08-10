@@ -43,6 +43,11 @@ body {
     float: right;
 }
 
+#users a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #navigation_wrapper {
     clear: both;
     background-color: #0076a3;

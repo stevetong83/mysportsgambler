@@ -7,25 +7,25 @@
 
 <div id="featured">
 
-  <h1>Featured Pick</h1>
-  <p>LONDON -- Aly Raisman finished the Olympics in style.
-
-    The U.S. captain matched Gabby Douglas in gold medals, winning the title on floor exercise Tuesday. Add in the bronze she earned on balance beam from earlier in the day, and she becomes the most decorated of the Fierce Five.
-
-    "It definitely went better than I thought it would," Raisman said.
-
-    Aly Raisman won gold on the floor exercise and bronze on the balance beam on Tuesday.
-    Good thing Raisman did so well, because the rest of the Americans came up empty-handed. Douglas had another rough day, finishing seventh on balance beam after a fall. World champion Jordyn Wieber, voted most likely to leave the Olympics with the biggest haul, was seventh on floor and finished without any individual medals.</p>
-</div>
+<%=	 render "picks/featured_pick" %>
+  </div>
 
   <div id="picks_content">
     <h2>Upcoming Picks</h2>
 
-    <%	 @picks.each do |pick| %>
+    <%	 @upcoming_picks.each do |pick| %>
+
+        <%	 if pick.game_day > Time.now %>
+
     <h4>Game: <%=	 link_to pick.game, pick %></h4>
         <b>Game Day:</b> <%=	 pick.game_day.strftime("%m/%d/%Y")  %>
+        <br /><br />
+
+            <%	 end %>
         <%	 end %>
   </div>
+
+  <%=	 Time.now %>
 </div>
 
 <div id="sidebar">

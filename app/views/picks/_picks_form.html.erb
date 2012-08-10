@@ -11,7 +11,7 @@
     
     <p>
       <%=	 f.label :game_day, "Game Date" %><br />
-      <%=	 f.text_field :game_day %>
+      <%=	 f.datetime_select :game_day %>
     </p>
     
     <p>
@@ -26,6 +26,7 @@
       
       <p>
         <%=	 f.check_box :featured %>
+        <%=	 f.label :featured, "Featured Pick" %>
       </p>
     
     <p>

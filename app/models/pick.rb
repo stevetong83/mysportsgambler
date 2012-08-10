@@ -8,9 +8,12 @@ class Pick < ActiveRecord::Base
 
   belongs_to :user
 
+  scope :featured,:conditions => {:featured => true }
+
   def to_param
     "#{id}-#{game.gsub(/\W/, '-').downcase}"
   end
+
 
 
 end

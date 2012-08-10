@@ -13,9 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
-$(function() {
-    $('#pick_game_day').datepicker({
-        dateFormat: "yy-mm-dd"
-    });
-});

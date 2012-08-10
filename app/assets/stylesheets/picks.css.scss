@@ -6,3 +6,21 @@
   margin-top: 10px;
   padding: 10px;
 }
+
+#picks_content a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#picks_content a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0076a3;
+}
+
+#picks_content a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0076a3;
+}

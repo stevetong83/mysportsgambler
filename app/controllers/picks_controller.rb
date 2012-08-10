@@ -3,7 +3,13 @@ class PicksController < ApplicationController
   load_and_authorize_resource :except => [:index, :show]
 
   def index
-    @picks = Pick.all
+    @picks = Pick.order("game_day DESC").limit(10)
+
+
+      @upcoming_picks = Pick.order("game_day ASC")
+
+    @featured_post = Pick.featured
+
   end
 
   def new
