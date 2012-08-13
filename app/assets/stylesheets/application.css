@@ -135,6 +135,24 @@ body {
     width: 100px;
 }
 
+.loss {
+     line-height: 1.5em;
+     font-size: 90%;
+     color: red;
+ }
+
+.profit {
+    line-height: 1.5em;
+    font-size: 90%;
+    color: green;
+}
+
+.disclaimer {
+    font-size: 60%;
+    font-style: italic;
+    color: #606060;
+}
+
 
 
 /*** Sidebars ***/

@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
   load_and_authorize_resource :except => :show
 
   def index
-    @categories = Category.all
+    @categories = Category.order('name').all
   end
 
   def new
@@ -36,9 +36,10 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @categories = Category.all
+    time = Time.now - 1.day
+    @categories = Category.order('name').all
     @category = Category.find params[:id]
-    @category_picks = @category.picks.paginate :page => params[:page],
+    @category_picks = @category.picks.where("game_day >= ?", time).paginate :page => params[:page],
                                                 :per_page => 10,
                                                 :order => "game_day ASC"
 

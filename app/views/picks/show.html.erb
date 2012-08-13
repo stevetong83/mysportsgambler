@@ -31,6 +31,17 @@
       <span class="details">Analysis:</span><br />
       </p>
 
+  <%	 unless @pick.profit.nil? %>
+  <p>
+    <span class="details">Profit: </span><span class="profit"><%=	 number_to_currency(@pick.profit) %></span>
+  </p>
+  <%	 end %>
+
+      <%	 unless @pick.loss.nil? %>
+  <p>
+    <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(@pick.loss) %></span>
+  </p>
+  <%	 end %>
 
 <div id="content_format">
   <%=	 simple_format(@pick.analysis) %>

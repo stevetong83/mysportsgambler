@@ -28,6 +28,16 @@
         <%=	 f.label :outcome %>:
         <%=	 f.select :outcome, %w(Win Loss), :include_blank => true %>
       </p>
+      
+      <p>
+        <%=	 f.label :profit %>
+        $<%=	 f.text_field :profit %>
+      </p>
+
+      <p>
+        <%=	 f.label :loss %>
+        $<%=	 f.text_field :loss %>
+      </p>
     
     <p>
       <%=	 f.label :analysis %><br />

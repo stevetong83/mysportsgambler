@@ -1,10 +1,10 @@
 <h4 align="center">Monetary Record</h4>
 <hr />
-<p>
-Profit: 
-  </p>
-<p>Loss:</p>
 
+<b>Profit: </b><span class="profit"><%=	 number_to_currency(@profit) %></span>
+<br />
+<b>Loss: </b><span class="loss"><%=	 number_to_currency(@loss) %></span>
+<br />
 
-
-<small>* Total profit is based on flat betting 100 per pick </small>
+<span class="disclaimer">Last 30 days only </span><br />
+<span class="disclaimer">* Total profit/loss is based on flat betting $100 per pick </span>

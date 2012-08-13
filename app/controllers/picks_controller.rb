@@ -26,7 +26,7 @@ class PicksController < ApplicationController
     @upcoming_picks = Pick.where('game_day >= ?', time).paginate :page => params[:page],
             :per_page => 10,
             :order => "game_day ASC"
-    @categories = Category.all
+    @categories = Category.order('name').all
     @page_title = "My Sports Gambler Upcoming Picks"
   end
 

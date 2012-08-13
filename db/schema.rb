@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120811024452) do
+ActiveRecord::Schema.define(:version => 20120813022727) do
 
   create_table "blogs", :force => true do |t|
     t.integer  "user_id"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20120811024452) do
     t.boolean  "featured"
     t.string   "outcome"
     t.integer  "category_id"
+    t.decimal  "profit"
+    t.decimal  "loss"
   end
 
   create_table "roles", :force => true do |t|

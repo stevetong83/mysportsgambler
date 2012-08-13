@@ -6,10 +6,16 @@
 
 
         <div id="picks">
-          <b>Game: </b><%=	 link_to pick.game, pick %><br />
-          <b>Date: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y") %></span><br />
-          <b>Pick: </b><span class="format"><%=	 pick.pick %></span><br />
-          <b>Outcome: </b><span class="format"><%=	 pick.outcome %></span>
+          <span class="details">Game: </span><%=	 link_to pick.game, pick %><br />
+          <span class="details">Date: </span><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y") %></span><br />
+          <span class="details">Pick: </span><span class="format"><%=	 pick.pick %></span><br />
+          <span class="details">Outcome: </span><span class="format"><%=	 pick.outcome %></span><br />
+          <%	 unless pick.profit.nil? %>
+          <span class="details">Profit: </span><span class="profit"><%=	 number_to_currency(pick.profit) %></span>
+              <%	 end %>
+          <%	 unless pick.loss.nil? %>
+          <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(pick.loss) %></span>
+              <%	 end %>
         </div>
 
 
@@ -27,6 +33,13 @@
   <div id="record">
     <%=	 render "picks/picks_record" %>
   </div>
+
+  <div id="money">
+
+    <%=	 render "picks/money_record" %>
+
+  </div>
+
 </div>
 
 <div id="content_footer"></div>

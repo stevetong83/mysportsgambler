@@ -17,7 +17,7 @@
   <%	 @picks_history.each do |pick| %>
 
      <div id="history_sidebar">
-       <%=	 link_to pick.game, pick %><br />
+       <%=	 link_to "#{pick.category.name}: #{pick.game}", pick %><br />
        <b>Outcome: </b><span class="format"><%=	 pick.outcome %></span>
      </div>
 
