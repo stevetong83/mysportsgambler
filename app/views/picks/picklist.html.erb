@@ -1,17 +1,25 @@
-<div id="content">
+<div id ="category_sidebar">
+
+  <%=	 render "categories/category_sidebar" %>
+
+</div>
+
+<div id="content_three">
 
   <h1>Upcoming Picks</h1>
 
   <%	 @upcoming_picks.each do |pick| %>
-      <%	 if pick.game_day > Time.now - 1.day %>
 
           <div id="picks">
             <b>Game: </b><%=	 link_to pick.game, pick %><br />
             <b>Game Day: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
           </div>
 
-      <%	 end %>
   <%	 end %>
+
+  <br />
+
+  <%=	 will_paginate @upcoming_picks %>
 
 </div>
 

@@ -1,0 +1,26 @@
+<h4 align="center">Categories</h4>
+
+<hr />
+
+
+
+
+  <%	 @categories.each do |category| %>
+
+         <p>
+           <%=	 link_to category.name, category %>
+
+    </p>
+
+
+
+  <%	 end %>
+
+
+<%	 if user_signed_in? %>
+    <%	 if current_user.has_role? :admin %>
+
+        <%=	 link_to "Edit Categories", categories_path %>
+
+    <%	 end %>
+<%	 end %>

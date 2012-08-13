@@ -1,27 +1,32 @@
 class PicksController < ApplicationController
 
   before_filter :records, :except => [:new, :create, :edit, :update, :destroy]
-  before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :authenticate_user!, :except => [:index, :show, :history, :picklist]
   load_and_authorize_resource :except => [:index, :show, :history, :picklist]
 
   def index
-    @picks = Pick.order("game_day DESC").limit(10)
-    @upcoming_picks = Pick.order("game_day ASC").limit(8)
+    time = Time.now - 1.day
+    @upcoming_picks = Pick.where("game_day > ?", time).order("game_day ASC").limit(8)
     @featured_post = Pick.featured
-
-
     @page_title = "Sports Picks | My Sports Gambler"
   end
 
   def history
-    @picks = Pick.order("game_day DESC").all
+    time = Time.now - 1.day
+    @history_picks = Pick.where('game_day <= ?',  time).paginate :page => params[:page],
+            :per_page => 10,
+            :order => "game_day DESC"
+    @categories = Category.all
     @page_title = "My Sports Gambler Pick History"
 
   end
 
   def picklist
-    @picks = Pick.order("game_day DESC").all
-    @upcoming_picks = Pick.order("game_day ASC")
+    time = Time.now - 1.day
+    @upcoming_picks = Pick.where('game_day >= ?', time).paginate :page => params[:page],
+            :per_page => 10,
+            :order => "game_day ASC"
+    @categories = Category.all
     @page_title = "My Sports Gambler Upcoming Picks"
   end
 
@@ -42,7 +47,6 @@ class PicksController < ApplicationController
   end
 
   def show
-    @picks = Pick.order("game_day DESC").limit(10)
     @pick = Pick.find params[:id]
     @page_title = "#{@pick.game} | My Sports Gambler"
   end
@@ -78,5 +82,6 @@ class PicksController < ApplicationController
     @picks_win_thirty = Pick.where('game_day >= ?', 30.days.ago).where('outcome = ?', 'Win' ).count
     @picks_loss_thirty = Pick.where('game_day >= ?', 30.days.ago).where('outcome = ?', 'Loss' ).count
   end
+
 
 end

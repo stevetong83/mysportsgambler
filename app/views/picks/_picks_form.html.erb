@@ -4,6 +4,11 @@
 
     <%=	 render "layouts/error_messages", :target => @pick %>
 
+      <p>
+        <%=	 f.label :category_id %><br />
+        <%=	 collection_select(:pick, :category_id, Category.all, :id, :name) %>
+      </p>
+      
     <p>
     <%=	 f.label :game %><br />
     <%=	 f.text_field :game %>

@@ -3,6 +3,7 @@ Sportsbook::Application.routes.draw do
   devise_for :users
 
   resources :picks
+  resources :categories
 
   resources :blogs do
     resources :comments
@@ -12,6 +13,7 @@ Sportsbook::Application.routes.draw do
   match "/picks" => "picks#index"
   match "/pickhistory" => "picks#history"
   match "/upcomingpicks" => "picks#picklist"
+  match "/categories" => "categories#index"
 
 
   # The priority is based upon order of creation:

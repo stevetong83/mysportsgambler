@@ -1,0 +1,36 @@
+<div id ="category_sidebar">
+
+  <%=	 render "categories/category_sidebar" %>
+
+</div>
+
+<div id="content_three">
+
+<h1>Upcoming <%=	 @category.name %> Picks</h1>
+
+
+<%	 @category_picks.each do |pick| %>
+
+
+    <div id="picks">
+      <span class="details">Game: </span><%=	 link_to pick.game, pick %><br />
+      <span class="details">Game Day: </span><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
+    </div>
+
+
+<%	 end %>
+
+  <%=	 will_paginate @category_picks %>
+
+<br />
+
+
+
+</div>
+
+
+<div id="sidebar">
+  <%=	 render "picks/picks_sidebar" %>
+</div>
+
+<div id="content_footer"></div>

@@ -1,36 +1,42 @@
 <div id="content">
-<h1>Game: <%=	 @pick.game %></h1>
+
+
+<h1><%	 unless @pick.category.nil? %><%=	 @pick.category.name %>: <% end %><%=	 @pick.game %></h1>
 
 <%	 if user_signed_in? %>
     <%	 if current_user.has_role? :admin%>
 
         <%=	 link_to "Edit", edit_pick_path(@pick) %> |
         <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %>
-
+        <br />
     <%	 end %>
 <%	 end %>
 
-<p>
-  <b>Game Date:</b> <%=	 @pick.game_day.strftime("%m/%d/%Y") %>
-</p>
-
-<p>
-  <b>Pick:</b> <%=	 @pick.pick %>
-</p>
-
-  <%	 unless @pick.outcome.nil? %>
-  
   <p>
-    <b>Outcome: </b><%=	 @pick.outcome %>
+  <span class="details">Game Date: </span><span class="format"><%=	 @pick.game_day.strftime("%m/%d/%Y") %></span><br />
   </p>
 
+     <p>
+      <span class="details">Pick:</span> <span class="format"><%=	 @pick.pick %></span><br />
+     </p>
+
+  <%	 unless @pick.outcome.nil? %>
+
+      <p>
+    <span class="details">Outcome: </span><span class="format"><%=	 @pick.outcome %></span><br />
+      </p>
+      
       <%	 end %>
+      <p>
+      <span class="details">Analysis:</span><br />
+      </p>
 
 
-  <b>Analysis:</b>
-  <div id="content_format">
+<div id="content_format">
   <%=	 simple_format(@pick.analysis) %>
-  </div>
+</div>
+
+
 
 </div>
 

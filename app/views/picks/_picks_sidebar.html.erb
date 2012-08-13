@@ -4,21 +4,25 @@
 
 </div>
 
+<div id="money">
+
+  <%=	 render "picks/money_record" %>
+
+</div>
+
 <div id="history">
 <h4 align="center">Picks History</h4>
   <hr />
 
-  <%	 @picks.each do |pick| %>
+  <%	 @picks_history.each do |pick| %>
 
-      <%	 if pick.game_day < Time.now - 1.day %>
      <div id="history_sidebar">
        <%=	 link_to pick.game, pick %><br />
        <b>Outcome: </b><span class="format"><%=	 pick.outcome %></span>
      </div>
 
-      <%	 end %>
-      
   <%	 end %>
+
 
   <p align="center"><%=	 link_to "See All", pickhistory_path %></p>
 </div>

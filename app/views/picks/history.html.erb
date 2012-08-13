@@ -2,9 +2,9 @@
 
 <h1>Pick History</h1>
 
-<%	 @picks.each do |pick| %>
+<%	 @history_picks.each do |pick| %>
 
-    <%	 if pick.game_day < Time.now - 1.day %>
+
         <div id="picks">
           <b>Game: </b><%=	 link_to pick.game, pick %><br />
           <b>Date: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y") %></span><br />
@@ -12,11 +12,14 @@
           <b>Outcome: </b><span class="format"><%=	 pick.outcome %></span>
         </div>
 
-    <%	 end %>
 
 
 
 <%	 end %>
+  <br />
+
+  <%=	 will_paginate @history_picks %>
+
 </div>
 
 <div id="sidebar">

@@ -4,9 +4,9 @@
 
 <%	 @featured_post.order(["created_at DESC"])[0,1].each do |pick| %>
 
-    <b>Game: </b><span class="format"><%=	 pick.game %></span><br />
-    <b>Game Day: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span><br />
-    <b>Pick: </b><span class="format"><%=	 pick.pick %></span><br />
+    <span class="details">Game: </span><span class="format"><%=	 pick.game %></span><br />
+    <span class="details">Game Day: </span><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span><br />
+    <span class="details">Pick: </span><span class="format"><%=	 pick.pick %></span><br />
 
     <div id="content_format">
      <%=	 pick.analysis.slice(0..500) %> <%=	 link_to "more", pick %>
