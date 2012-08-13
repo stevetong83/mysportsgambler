@@ -1,7 +1,7 @@
 <div id="content">
 
 
-<h1><%	 unless @pick.category.nil? %><%=	 @pick.category.name %>: <% end %><%=	 @pick.game %></h1>
+<h1><%=	 @pick.category.name %>: <%=	 @pick.game %></h1>
 
 <%	 if user_signed_in? %>
     <%	 if current_user.has_role? :admin%>
@@ -20,16 +20,14 @@
       <span class="details">Pick:</span> <span class="format"><%=	 @pick.pick %></span><br />
      </p>
 
-  <%	 unless @pick.outcome.nil? %>
+  <%	 unless @pick.outcome.blank? %>
 
       <p>
     <span class="details">Outcome: </span><span class="format"><%=	 @pick.outcome %></span><br />
       </p>
       
       <%	 end %>
-      <p>
-      <span class="details">Analysis:</span><br />
-      </p>
+
 
   <%	 unless @pick.profit.nil? %>
   <p>
@@ -42,6 +40,10 @@
     <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(@pick.loss) %></span>
   </p>
   <%	 end %>
+
+  <p>
+    <span class="details">Analysis:</span><br />
+  </p>
 
 <div id="content_format">
   <%=	 simple_format(@pick.analysis) %>

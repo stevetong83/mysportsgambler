@@ -11,8 +11,8 @@
   <%	 @upcoming_picks.each do |pick| %>
 
           <div id="picks">
-            <b>Game: </b><%=	 link_to pick.game, pick %><br />
-            <b>Game Day: </b><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
+            <span class="details">Game: </span><%=	 link_to pick.game, pick %><br />
+            <span class="details">Game Day: </span><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span>
           </div>
 
   <%	 end %>
