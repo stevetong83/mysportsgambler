@@ -25,7 +25,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/picks/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
               <folding>
                 <marker date="1344832190428" expanded="true" signature="83:325" placeholder="if ... end" />
                 <marker date="1344832190428" expanded="true" signature="113:314" placeholder="if ... end" />
@@ -55,19 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="314" selection-end="314" vertical-scroll-proportion="0.24548736">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="19" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.39952996">
               <folding />
             </state>
           </provider>
@@ -97,8 +88,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -574,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/picks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+        <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
           <folding>
             <marker date="1344832190428" expanded="true" signature="83:325" placeholder="if ... end" />
             <marker date="1344832190428" expanded="true" signature="113:314" placeholder="if ... end" />
@@ -599,14 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="314" selection-end="314" vertical-scroll-proportion="0.24548736">
+        <state line="20" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.39952996">
           <folding />
         </state>
       </provider>
