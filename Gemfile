@@ -6,11 +6,13 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'pg'
+  gem 'thin'
+  gem 'newrelic_rpm'
 end
 
 
@@ -33,6 +35,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 gem 'will_paginate'
+gem 'heroku'
 
 
 # To use ActiveModel has_secure_password
