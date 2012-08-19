@@ -11,7 +11,8 @@ end
 
 group :production do
   gem 'mysql2'
-  gem 'webbynode'
+  gem 'capistrano'
+  gem 'capistrano-vexxhost'
 end
 
 
@@ -34,7 +35,7 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 gem 'will_paginate'
-gem 'heroku'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
