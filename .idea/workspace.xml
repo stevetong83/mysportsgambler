@@ -58,7 +58,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="68" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24548736">
+            <state line="12" column="60" selection-start="314" selection-end="314" vertical-scroll-proportion="0.24548736">
               <folding />
             </state>
           </provider>
@@ -67,7 +67,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="67" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+            <state line="25" column="19" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -599,14 +599,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="67" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+        <state line="25" column="19" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24548736">
+        <state line="12" column="60" selection-start="314" selection-end="314" vertical-scroll-proportion="0.24548736">
           <folding />
         </state>
       </provider>

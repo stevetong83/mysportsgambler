@@ -6,7 +6,7 @@ require 'bundler/capistrano'
 set :user, "set2001"
 set :password, "msg2012"
 set :domain, "mysportsgambler.com"
-set :mount_path, "/public_html"
+set :mount_path, "/"
 set :application, "mysportsgambler"
 
 set :scm, :git
