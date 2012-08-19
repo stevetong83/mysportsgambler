@@ -6,12 +6,13 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'pg'
+  gem 'sqlite3'
 end
 
 group :production do
-  gem 'pg'
-  gem 'thin'
+  gem 'mysql2'
+  gem 'capistrano'
+  gem 'capistrano-vexxhost'
 end
 
 
@@ -28,8 +29,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'capistrano'
-gem 'capistrano-vexxhost'
+
 gem 'jquery-rails'
 gem 'devise'
 gem 'cancan'

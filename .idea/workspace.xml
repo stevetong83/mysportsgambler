@@ -26,25 +26,13 @@
         <entry file="file://$PROJECT_DIR$/app/views/picks/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="picks_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/picks_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/picks/history.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="68" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1344832190428" expanded="true" signature="83:325" placeholder="if ... end" />
+                <marker date="1344832190428" expanded="true" signature="113:314" placeholder="if ... end" />
+                <marker date="1344832190428" expanded="true" signature="584:755" placeholder="unless ... end" />
+                <marker date="1344832190428" expanded="true" signature="767:927" placeholder="unless ... end" />
+                <marker date="1344832190428" expanded="true" signature="942:1094" placeholder="unless ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +40,7 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="15" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+            <state line="105" column="22" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,7 +49,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+            <state line="14" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,43 +58,9 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="53" selection-start="312" selection-end="312" vertical-scroll-proportion="0.25">
+            <state line="12" column="29" selection-start="300" selection-end="300" vertical-scroll-proportion="0.25">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="14" selection-start="782" selection-end="782" vertical-scroll-proportion="-19.615385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="msglogo.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/images/msglogo.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -120,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/pick.rb" />
         <option value="$PROJECT_DIR$/app/views/picks/_picks_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/picks/_picks_sidebar.html.erb" />
@@ -133,6 +86,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/picks/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
@@ -140,8 +94,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="882" />
-    <option name="y" value="29" />
+    <option name="x" value="-36" />
+    <option name="y" value="17" />
     <option name="width" value="853" />
     <option name="height" value="975" />
   </component>
@@ -765,7 +719,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="882" y="29" width="853" height="975" extended-state="0" />
+    <frame x="-36" y="17" width="853" height="975" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -840,28 +794,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="65" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/picks/_money_record.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="77" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/picks/picklist.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="63" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" />
@@ -891,29 +823,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/msglogo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/picks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="73" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="14" selection-start="782" selection-end="782" vertical-scroll-proportion="-19.615385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="15" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1344832190428" expanded="true" signature="83:325" placeholder="if ... end" />
+            <marker date="1344832190428" expanded="true" signature="113:314" placeholder="if ... end" />
+            <marker date="1344832190428" expanded="true" signature="584:755" placeholder="unless ... end" />
+            <marker date="1344832190428" expanded="true" signature="767:927" placeholder="unless ... end" />
+            <marker date="1344832190428" expanded="true" signature="942:1094" placeholder="unless ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,16 +841,56 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="22" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/msglogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="14" selection-start="782" selection-end="782" vertical-scroll-proportion="0.861039">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="15" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+        <state line="14" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="53" selection-start="312" selection-end="312" vertical-scroll-proportion="0.25">
+        <state line="12" column="29" selection-start="300" selection-end="300" vertical-scroll-proportion="0.25">
           <folding />
         </state>
       </provider>
