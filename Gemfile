@@ -11,6 +11,7 @@ end
 
 group :production do
   gem 'mysql2'
+  gem 'webbynode'
 end
 
 
