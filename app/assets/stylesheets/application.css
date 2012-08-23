@@ -113,6 +113,13 @@ body {
     margin-top: 10px;
 }
 
+.c_format {
+    line-height: 1.5em;
+    font-size: 90%;
+    color: #606060;
+    margin-top: 10px;
+}
+
 
 
 #content {
@@ -285,6 +292,31 @@ body {
 #featured {
     border: 10px solid #212021;
     padding: 20px;
+}
+
+#featured_image {
+    padding-top: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
+#featured img {
+    max-height: 110px;
+    max-width: 165px;
+}
+
+#featured_story {
+    float: left;
+    width: 300px;
+}
+
+#featured_details {
+    padding-top: 5px;
+}
+
+#featured_foot {
+    padding-top: 2px;
+    clear: both;
 }
 
 #featured a:link {

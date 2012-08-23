@@ -1,5 +1,5 @@
 class Pick < ActiveRecord::Base
-  attr_accessible :analysis, :game, :line, :pick, :user_id, :game_day, :featured, :outcome, :category_id, :profit, :loss
+  attr_accessible :analysis, :game, :line, :pick, :user_id, :game_day, :featured, :outcome, :category_id, :profit, :loss, :image_url
 
   validates :game, :presence => true
   validates :pick, :presence => true

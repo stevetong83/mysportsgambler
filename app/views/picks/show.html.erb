@@ -1,54 +1,72 @@
 <div id="content">
 
+    <h1><%=	 @pick.category.name %>: <%=	 @pick.game %></h1>
 
-<h1><%=	 @pick.category.name %>: <%=	 @pick.game %></h1>
+    <%	 if user_signed_in? %>
+        <%	 if current_user.has_role? :admin%>
 
-<%	 if user_signed_in? %>
-    <%	 if current_user.has_role? :admin%>
-
-        <%=	 link_to "Edit", edit_pick_path(@pick) %> |
-        <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %>
-        <br />
+            <%=	 link_to "Edit", edit_pick_path(@pick) %> |
+            <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %>
+            <br />
+        <%	 end %>
     <%	 end %>
-<%	 end %>
 
-  <p>
-  <span class="details">Game Date: </span><span class="format"><%=	 @pick.game_day.strftime("%m/%d/%Y") %></span><br />
-  </p>
+    <%	 unless @pick.image_url.nil? %>
+      <div id="pick_image">
+        <%=	 image_tag(@pick.image_url) %>
+      </div>
+    <%	 end %>
+  
+  <div id="pick_details">
+
+      <p>
+      <span class="details">Game Date: </span><span class="format"><%=	 @pick.game_day.strftime("%m/%d/%Y") %></span><br />
+      </p>
 
      <p>
       <span class="details">Pick:</span> <span class="format"><%=	 @pick.pick %></span><br />
      </p>
 
-  <%	 unless @pick.outcome.blank? %>
+  <%	 if @pick.outcome.blank? %>
 
       <p>
-    <span class="details">Outcome: </span><span class="format"><%=	 @pick.outcome %></span><br />
+        <span class="details">Outcome: </span><span class="format"><em>Pending</em></span><br />
+      </p>
+      
+  <%	 else %>
+
+      <p>
+        <span class="details">Outcome: </span><span class="format"><%=	 @pick.outcome %></span><br />
       </p>
       
       <%	 end %>
 
 
   <%	 unless @pick.profit.nil? %>
-  <p>
-    <span class="details">Profit: </span><span class="profit"><%=	 number_to_currency(@pick.profit) %></span>
-  </p>
+
+      <p>
+        <span class="details">Profit: </span><span class="profit"><%=	 number_to_currency(@pick.profit) %></span>
+      </p>
+
   <%	 end %>
 
-      <%	 unless @pick.loss.nil? %>
-  <p>
-    <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(@pick.loss) %></span>
-  </p>
+  <%	 unless @pick.loss.nil? %>
+      <p>
+        <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(@pick.loss) %></span>
+      </p>
   <%	 end %>
+  </div>
+  
+      <div id="pick_foot">
+      <p>
+        <span class="details">Analysis:</span><br />
+      </p>
 
-  <p>
-    <span class="details">Analysis:</span><br />
-  </p>
-
-<div id="content_format">
-  <%=	 simple_format(@pick.analysis) %>
-</div>
-
+    <div id="content_format">
+      <%=	 simple_format(@pick.analysis) %>
+    </div>
+    
+  </div>
 
 
 </div>

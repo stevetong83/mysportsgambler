@@ -1,17 +1,36 @@
+<%	 @featured_post.order(["created_at DESC"])[0,1].each do |pick| %>
+
+<%	 unless pick.image_url.nil? %>
+
+<div id="featured_image" xmlns="http://www.w3.org/1999/html">
+  <%=	 link_to image_tag(pick.image_url), pick %>
+</div>
+
+    <%	 end %>
+
+<div id="featured_story">
 <h1>Featured Pick</h1>
 
+ <div id="featured_details">
 
 
-<%	 @featured_post.order(["created_at DESC"])[0,1].each do |pick| %>
 
     <span class="details">Game: </span><span class="format"><%=	 pick.game %></span><br />
     <span class="details">Game Day: </span><span class="format"><%=	 pick.game_day.strftime("%m/%d/%Y")  %></span><br />
     <span class="details">Pick: </span><span class="format"><%=	 pick.pick %></span><br />
+       </div>
+       </div>
 
-    <div id="content_format">
-     <%=	 pick.analysis.slice(0..500) %> <%=	 link_to "more", pick %>
-    </div>
-    <%	 end %>
+    <div id="featured_foot">
+    <p class="c_format">
+     <%=	 pick.analysis.slice(0..330) %>....
+      </p>
+      <%=	 link_to "Read More", pick %>
+      </div>
+
+<%	 end %>
+
+
 
 
 

@@ -54,6 +54,27 @@
   color: #0076a3;
 }
 
+#pick_image {
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pick_image img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#pick_details {
+  float: left;
+}
+
+#pick_foot {
+  clear: both;
+
+}
+
 
 
 

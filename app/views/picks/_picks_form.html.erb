@@ -25,6 +25,11 @@
     </p>
       
       <p>
+        <%=	 f.label :image_url %><br />
+        <%=	 f.text_field :image_url %>
+      </p>
+      
+      <p>
         <%=	 f.label :outcome %>:
         <%=	 f.select :outcome, %w(Win Loss), :include_blank => true %>
       </p>
