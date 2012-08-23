@@ -11,7 +11,7 @@
         <%	 end %>
     <%	 end %>
 
-    <%	 unless @pick.image_url.nil? %>
+    <%	 unless @pick.image_url.blank? %>
       <div id="pick_image">
         <%=	 image_tag(@pick.image_url) %>
       </div>
@@ -56,8 +56,9 @@
       </p>
   <%	 end %>
   </div>
-  
-      <div id="pick_foot">
+
+  <div id="pick_foot">
+
       <p>
         <span class="details">Analysis:</span><br />
       </p>
@@ -66,8 +67,7 @@
       <%=	 simple_format(@pick.analysis) %>
     </div>
     
-  </div>
-
+</div>
 
 </div>
 

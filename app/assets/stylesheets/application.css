@@ -107,7 +107,7 @@ body {
 }
 
 #content_format {
-  line-height: 1.5em;
+    line-height: 1.5em;
     font-size: 90%;
     color: #606060;
     margin-top: 10px;
@@ -119,8 +119,6 @@ body {
     color: #606060;
     margin-top: 10px;
 }
-
-
 
 #content {
     width: 615px;
@@ -303,6 +301,8 @@ body {
 #featured img {
     max-height: 110px;
     max-width: 165px;
+    border: 1px solid #000;
+    padding: 1px;
 }
 
 #featured_story {
