@@ -15,4 +15,6 @@ class ApplicationController < ActionController::Base
     @profit = Pick.where("game_day >= ?", 30.days.ago).sum('profit')
     @loss = Pick.where("game_day >= ?", 30.days.ago).sum('loss')
   end
+
+
 end

@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @page_title = "My Sports Gambler | Home"
+    @page_title = "Sports Betting Information, Expert Sports Handicapping, Winning Sports Picks. | My Sports Gambler"
     @blogs = Blog.order("created_at DESC").limit(5)
 
     @featured_post = Pick.featured

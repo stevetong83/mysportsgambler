@@ -8,7 +8,7 @@ class PicksController < ApplicationController
     time = Time.now - 1.day
     @upcoming_picks = Pick.where("game_day > ?", time).order("game_day ASC").limit(8)
     @featured_post = Pick.featured
-    @page_title = "Sports Picks | My Sports Gambler"
+    @page_title = "Winning Sports Picks | My Sports Gambler"
   end
 
   def history
