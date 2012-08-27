@@ -22,55 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
+      <file leaf-file-name="_picks_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/picks/_picks_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="97" selection-start="519" selection-end="519" vertical-scroll-proportion="-11.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="113" selection-start="523" selection-end="523" vertical-scroll-proportion="-16.346153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_blogs_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blogs/_blogs_sidebar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogs.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blogs.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="72" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="71" selection-start="567" selection-end="567" vertical-scroll-proportion="0.31439894">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_picks_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/picks/_picks_sidebar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="69" selection-start="239" selection-end="239" vertical-scroll-proportion="-8.5">
+            <state line="33" column="48" selection-start="755" selection-end="755" vertical-scroll-proportion="0.67909455">
               <folding />
             </state>
           </provider>
@@ -86,9 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/picks.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/picks/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/picks_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -97,11 +49,14 @@
         <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blogs.css.scss" />
         <option value="$PROJECT_DIR$/app/views/comments/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/blogs/_blogs_sidebar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/picks/_picks_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/picks/_featured_pick.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/picks/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/_blogs_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/picks/_picks_form.html.erb" />
       </list>
     </option>
   </component>
@@ -137,16 +92,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportsbook" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -495,6 +440,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sportsbook" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -734,7 +689,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3122765" sideWeight="0.67009133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3206198" sideWeight="0.67009133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -802,42 +757,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="629" selection-end="629" vertical-scroll-proportion="0.40422723" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/picks.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="76" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="61" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/pages_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="58" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="73" selection-start="730" selection-end="730" vertical-scroll-proportion="0.80613667">
-          <folding />
-        </state>
+        <state line="34" column="73" selection-start="730" selection-end="730" vertical-scroll-proportion="0.80613667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/picks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="478" selection-end="478" vertical-scroll-proportion="0.022457067">
-          <folding />
-        </state>
+        <state line="10" column="27" selection-start="478" selection-end="478" vertical-scroll-proportion="0.022457067" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
@@ -847,63 +774,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="209" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="14" selection-start="209" selection-end="217" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="302" selection-end="302" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
+        <state line="15" column="65" selection-start="302" selection-end="302" vertical-scroll-proportion="-9.807693" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="66" selection-start="375" selection-end="375" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="97" selection-start="519" selection-end="519" vertical-scroll-proportion="-11.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="113" selection-start="523" selection-end="523" vertical-scroll-proportion="-16.346153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blogs.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="72" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/_blogs_sidebar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="66" selection-start="375" selection-end="375" vertical-scroll-proportion="-9.807693" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/picks/_picks_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="69" selection-start="239" selection-end="239" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
+        <state line="13" column="69" selection-start="239" selection-end="239" vertical-scroll-proportion="-8.5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/picks/_featured_pick.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="774" selection-end="774" vertical-scroll-proportion="-16.346153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/picks.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blogs.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="72" selection-start="372" selection-end="372" vertical-scroll-proportion="0.408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="567" selection-end="567" vertical-scroll-proportion="0.31439894">
+        <state line="287" column="63" selection-start="4426" selection-end="4426" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/picks/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="2" selection-start="1632" selection-end="1632" vertical-scroll-proportion="1.3720931" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/_blogs_sidebar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="72" selection-start="233" selection-end="233" vertical-scroll-proportion="0.25134408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="56" selection-start="542" selection-end="542" vertical-scroll-proportion="0.47536618" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="68" selection-start="694" selection-end="694" vertical-scroll-proportion="0.6111851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/picks/_picks_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="48" selection-start="755" selection-end="755" vertical-scroll-proportion="0.67909455">
           <folding />
         </state>
       </provider>

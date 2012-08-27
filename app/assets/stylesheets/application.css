@@ -134,6 +134,10 @@ body {
     clear: both;
 }
 
+.clear {
+    clear: both;
+}
+
 /*** Class Formatting ***/
 
 .format {
@@ -293,15 +297,6 @@ body {
     width: 300px;
 }
 
-#featured_details {
-    padding-top: 5px;
-}
-
-#featured_foot {
-    padding-top: 2px;
-    clear: both;
-}
-
 #featured a:link {
     text-decoration: none;
     font-weight: bold;
@@ -319,8 +314,6 @@ body {
     font-weight: bold;
     color: #0076a3;
 }
-
-
 
 /*** spacing ***/
 

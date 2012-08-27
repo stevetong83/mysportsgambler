@@ -2,24 +2,20 @@
 
 <%	 if user_signed_in? %>
     <%	 if current_user.has_role? :admin %>
-
-<%=	 link_to "New Blog", new_blog_path %><br /> <br />
-
+        <%=	 link_to "New Blog", new_blog_path %><br /> <br />
     <%	 end %>
 <%	 end %>
 
 <div id="blog_roll">
 
 <%	 @blogs.each do |blog| %>
-   
-      <p>
-    <h3><%=	 link_to blog.title, blog %></h3>
-    <span class="format"><em>Written by: <%=	 blog.author %> on <%=	 blog.created_at.strftime("%m/%d/%Y") %></em></span>
-    <div id="content_format">
-      <%=	 blog.body.slice(0..450) %>....
-    </div>
-      </p>
-
+    <p>
+        <h3><%=	 link_to blog.title, blog %></h3>
+        <span class="format"><em>Written by: <%=	 blog.author %> on <%=	 blog.created_at.strftime("%m/%d/%Y") %></em></span>
+        <div id="content_format">
+            <%=	 blog.body.slice(0..450) %>....
+        </div>
+    </p>
 <%	 end %>
 
 </div>

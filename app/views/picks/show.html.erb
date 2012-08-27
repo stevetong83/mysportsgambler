@@ -4,10 +4,8 @@
 
     <%	 if user_signed_in? %>
         <%	 if current_user.has_role? :admin%>
-
             <%=	 link_to "Edit", edit_pick_path(@pick) %> |
-            <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %>
-            <br />
+            <%=	 link_to "Delete", @pick, confirm: "Are you sure?", method: :delete %><br />
         <%	 end %>
     <%	 end %>
 
@@ -20,34 +18,27 @@
   <div id="pick_details">
 
       <p>
-      <span class="details">Game Date: </span><span class="format"><%=	 @pick.game_day.strftime("%m/%d/%Y") %></span><br />
+        <span class="details">Game Date: </span><span class="format"><%=	 @pick.game_day.strftime("%m/%d/%Y") %></span><br />
       </p>
 
      <p>
-      <span class="details">Pick:</span> <span class="format"><%=	 @pick.pick %></span><br />
+        <span class="details">Pick:</span> <span class="format"><%=	 @pick.pick %></span><br />
      </p>
 
   <%	 if @pick.outcome.blank? %>
-
       <p>
         <span class="details">Outcome: </span><span class="format"><em>Pending</em></span><br />
       </p>
-      
   <%	 else %>
-
       <p>
         <span class="details">Outcome: </span><span class="format"><%=	 @pick.outcome %></span><br />
       </p>
-      
-      <%	 end %>
-
+  <%	 end %>
 
   <%	 unless @pick.profit.nil? %>
-
       <p>
         <span class="details">Profit: </span><span class="profit"><%=	 number_to_currency(@pick.profit) %></span>
       </p>
-
   <%	 end %>
 
   <%	 unless @pick.loss.nil? %>
@@ -55,19 +46,17 @@
         <span class="details">Loss: </span><span class="loss"><%=	 number_to_currency(@pick.loss) %></span>
       </p>
   <%	 end %>
+
   </div>
 
-  <div id="pick_foot">
-
+  <div class="clear"></div>
       <p>
         <span class="details">Analysis:</span><br />
       </p>
 
-    <div id="content_format">
+  <div class="c_format">
       <%=	 simple_format(@pick.analysis) %>
-    </div>
-    
-</div>
+  </div>
 
 </div>
 
@@ -75,5 +64,5 @@
   <%=	 render "picks/picks_sidebar" %>
 </div>
 
-<div id="content_footer"></div>
+<div class="clear"></div>
 

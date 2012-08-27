@@ -1,13 +1,12 @@
 <div id="content">
-<h1><%=	 @blog.title %></h1>
-<span class="format"><em>Written by <%=	 @blog.author %> on <%=	 @blog.created_at.strftime("%m/%d/%Y") %></em></span>
-<br />
+    <h1><%=	 @blog.title %></h1>
+    <span class="format"><em>Written by <%=	 @blog.author %> on <%=	 @blog.created_at.strftime("%m/%d/%Y") %></em></span><br />
 
   <%	 if user_signed_in? %>
       <%	 if current_user.has_role? :admin %>
-<%=	 link_to "Edit", edit_blog_path(@blog) %> |
-<%=	 link_to "Delete", @blog, confirm: "Are you sure?", method: :delete %>
-          <%	 end %>
+        <%=	 link_to "Edit", edit_blog_path(@blog) %> |
+        <%=	 link_to "Delete", @blog, confirm: "Are you sure?", method: :delete %>
+      <%	 end %>
   <%	 end %>
 
 <div id="content_format">
@@ -29,4 +28,4 @@
   <%=	 render "blogs/blogs_sidebar" %>
 </div>
 
-<div id="content_footer"></div>
+<div class="clear"></div>
