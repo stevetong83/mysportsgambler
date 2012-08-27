@@ -23,7 +23,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @blogs = Blog.all
+    @blogs = Blog.order("created_at DESC").all
     @blog = Blog.find params[:id]
     @page_title = "#{@blog.title} | My Sports Gambler"
   end

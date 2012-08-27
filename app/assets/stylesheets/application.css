@@ -166,8 +166,6 @@ body {
     color: #606060;
 }
 
-
-
 /*** Sidebars ***/
 
 #sidebar {
@@ -203,22 +201,15 @@ body {
     color: #0076a3;
 }
 
-#record {
+.sidebar_content {
     padding: 10px;
-    text-align: center;
     margin-bottom: 10px;
     background: #efefef;
 }
 
-#money {
+.sidebar_content_center {
     padding: 10px;
     text-align: center;
-    margin-bottom: 10px;
-    background: #efefef;
-}
-
-#history {
-    padding: 10px;
     margin-bottom: 10px;
     background: #efefef;
 }
@@ -247,15 +238,8 @@ body {
     color: #0076a3;
 }
 
-#blog_posts {
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #efefef;
-}
-
 #posts_sidebar {
     margin-top: 15px;
-
 }
 
 #posts_list {
@@ -283,7 +267,6 @@ body {
     border-radius: 5px;
     padding: 10px;
 }
-
 
 /*** Featured Pick Box ***/
 

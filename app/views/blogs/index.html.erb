@@ -14,7 +14,7 @@
    
       <p>
     <h3><%=	 link_to blog.title, blog %></h3>
-    <span class="format">Written by: <%=	 blog.author %> on <%=	 blog.created_at.strftime("%m/%d/%Y") %></span>
+    <span class="format"><em>Written by: <%=	 blog.author %> on <%=	 blog.created_at.strftime("%m/%d/%Y") %></em></span>
     <div id="content_format">
       <%=	 blog.body.slice(0..450) %>....
     </div>

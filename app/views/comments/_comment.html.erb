@@ -1,8 +1,11 @@
-<div id="comments">
 
-<h5><%=	 comment.name %></h5>
+
+<h4><%=	 comment.name %></h4>
 
 <span class="format"><%=	 comment.body %></span>
+  
+
+
 
 <%	 if user_signed_in? %>
     <%	 if current_user.has_role? :admin %>
@@ -10,4 +13,3 @@
 <%	 end %>
     <%	 end %>
 
-</div>
