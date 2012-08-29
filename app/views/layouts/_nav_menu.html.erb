@@ -1,9 +1,13 @@
-<div id="navigation">
 <ul>
   <li><%=	 link_to "Home", root_path %></li>
   <li><%=	 link_to "Blog", blogs_path %></li>
   <li><%=	 link_to "Picks", picks_path %></li>
-  <li><%=	 link_to "Categories", upcomingpicks_path %></li>
+  <li><%=	 link_to "Categories", upcomingpicks_path %>
+    <ul>
+      <%	 @categories.each do |category| %>
+            <li><%=	 link_to category.name, category %></li>
+      <%	 end %>
+    </ul>
+  </li>
   <li><%=	 link_to "Record", pickhistory_path %></li>
 </ul>
-</div>

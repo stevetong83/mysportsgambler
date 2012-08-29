@@ -51,47 +51,79 @@ body {
     text-decoration: none;
 }
 
-#navigation_wrapper {
-    clear: both;
-    background-color: #0076a3;
-    height: 40px;
+/*** Navigation ***/
+
+#nav {
+    font-weight: bold;
+
 }
 
-#navigation {
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: bold;
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height:  40px;
+    background: #0076a3;
     border: 2px solid #ccc;
 }
 
-#navigation ul {
-    margin: 0;
-    padding: 0;
+#nav li {
+    float: left;
+    display: block;
 }
 
-#navigation li {
-    list-style-type: none;
-    display: inline-block;
-    width: 175px;
+#nav li a {
+    display: block;
+    width: 199px;
     text-align: center;
-}
-
-
-#navigation a:link {
+    line-height: 40px;
     color: #fff;
     text-decoration: none;
 }
 
-#navigation a:hover {
-    color: #fff;
-    text-decoration: underline;
-    
+#nav li:last-child a {
+    width: 200px;
 }
 
-#navigation a:visited {
-    color: #fff;
-    text-decoration: none;
+#nav li a:hover {
+    background: #ccc;
+    color: #0076a3;
 }
+
+/*** Second Level Nav ***/
+
+#nav li ul {
+    position: absolute;
+    display: none;
+    height: auto;
+
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav li li {
+    float: none;
+    display: block;
+    width: 197px;
+    line-height: 40px;
+
+}
+
+#nav li ul a {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    width: 177px;
+}
+
+#nav li ul li:last-child a {
+   width: 179px;
+}
+
+/*** Content ***/
 
 #stage {
     background-color: #fff;

@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   end
   before_filter :picks, :except => [:new, :create, :edit, :update, :destroy]
   before_filter :money, :except => [:new, :create, :edit, :update, :destroy]
+  before_filter :category
 
   def picks
     time = Time.now - 1.day
@@ -14,6 +15,10 @@ class ApplicationController < ActionController::Base
   def money
     @profit = Pick.where("game_day >= ?", 30.days.ago).sum('profit')
     @loss = Pick.where("game_day >= ?", 30.days.ago).sum('loss')
+  end
+
+  def category
+    @categories = Category.order('name ASC').all
   end
 
 
