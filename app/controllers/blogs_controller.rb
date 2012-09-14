@@ -4,7 +4,9 @@ class BlogsController < ApplicationController
 
 
   def index
-    @blogs = Blog.order("created_at DESC").all
+    @blogs = Blog.paginate   :page => params[:page],
+        :per_page => 10,
+        :order => "created_at DESC"
     @page_title = "My Sports Gambler Blog"
   end
 
