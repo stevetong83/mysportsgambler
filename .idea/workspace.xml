@@ -40,19 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paginate.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="paginate.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/paginate.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+            <state line="38" column="68" selection-start="819" selection-end="819" vertical-scroll-proportion="0.44155845">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogs_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="blogs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.15454546">
+            <state line="7" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/app/views/picks/history.html.erb" />
         <option value="$PROJECT_DIR$/app/views/picks/picklist.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/paginate.css" />
         <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/paginate.css" />
       </list>
     </option>
   </component>
@@ -735,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/paginate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="61" selection-start="595" selection-end="595" vertical-scroll-proportion="-13.730769">
@@ -758,7 +751,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.15454546">
+        <state line="7" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/paginate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="68" selection-start="819" selection-end="819" vertical-scroll-proportion="0.44155845">
           <folding />
         </state>
       </provider>
