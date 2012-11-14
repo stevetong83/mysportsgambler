@@ -36,38 +36,6 @@ ActiveRecord::Schema.define(:version => 20120823201918) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "contacts", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "home_number"
-    t.string   "mobile_number"
-    t.string   "work_number"
-    t.string   "email"
-    t.string   "email2"
-    t.string   "work_email"
-    t.string   "address"
-    t.string   "address2"
-    t.string   "city"
-    t.string   "state"
-    t.string   "postal_code"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  create_table "groups", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "photos", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "picks", :force => true do |t|
     t.integer  "user_id"
     t.string   "game"
@@ -83,24 +51,6 @@ ActiveRecord::Schema.define(:version => 20120823201918) do
     t.decimal  "profit"
     t.decimal  "loss"
     t.string   "image_url"
-  end
-
-  create_table "profiles", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "home_number"
-    t.string   "mobile_number"
-    t.string   "work_number"
-    t.string   "email"
-    t.string   "email2"
-    t.string   "work_email"
-    t.string   "address"
-    t.string   "address2"
-    t.string   "city"
-    t.string   "state"
-    t.string   "postal_code"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
   end
 
   create_table "roles", :force => true do |t|

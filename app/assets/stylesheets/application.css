@@ -25,6 +25,14 @@ body {
     margin: 0;
 }
 
+input {
+    padding: 5px;
+}
+
+textarea {
+    padding: 5px;
+}
+
 #wrapper {
     width: 1000px;
     margin-left: auto;
@@ -32,24 +40,30 @@ body {
 }
 
 #header {
+    position: relative;
     color: #fff;
     background: url('msglogo.jpg');
     height: 106px;
 }
 
-#logo  {
-    margin-bottom: 5px;
-    float: left
+#social  {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #users {
-    float: right;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #users a {
     color: #fff;
     text-decoration: none;
 }
+
+
 
 /*** Navigation ***/
 

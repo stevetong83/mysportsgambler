@@ -1,6 +1,6 @@
 <%	 @featured_post.order(["created_at DESC"])[0,1].each do |pick| %>
 
-    <%	 unless pick.image_url.nil? %>
+    <%	 unless pick.image_url.blank? %>
 
         <div id="featured_image">
           <%=	 link_to image_tag(pick.image_url), pick %>
