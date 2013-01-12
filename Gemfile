@@ -10,6 +10,8 @@ gem 'rails', '3.2.11'
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'sqlite3'
+  gem 'capybara'
+  gem 'database_cleaner'
 
 end
 
@@ -40,6 +42,10 @@ gem 'cancan'
 gem 'rolify'
 gem 'will_paginate'
 gem 'heroku'
+gem 'haml'
+gem 'pry'
+gem 'pry-nav'
+gem 'select2-rails'
 
 
 # To use ActiveModel has_secure_password

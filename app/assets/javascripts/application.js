@@ -12,4 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require select2
 //= require_tree .
+
+
+$(document).ready(function() {
+
+	$(".chosen-select").select2();
+
+});

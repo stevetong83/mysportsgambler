@@ -6,7 +6,7 @@
 
       <p>
         <%=	 f.label :category_id %><br />
-        <%=	 collection_select(:pick, :category_id, Category.all, :id, :name) %>
+        <%=	 f.collection_select :category_id, Category.all, :id, :name, {include_blank: false}, class: 'chosen-select', style: "width: 250px"  %>
       </p>
       
     <p>
@@ -31,7 +31,7 @@
       
       <p>
         <%=	 f.label :outcome %>:
-        <%=	 f.select :outcome, %w(Win Loss Push), :include_blank => true %>
+        <%=	 f.select :outcome, %w(Win Loss Push), {include_blank: true}, class: 'chosen-select', style: "width: 150px"  %>
       </p>
       
       <p>
