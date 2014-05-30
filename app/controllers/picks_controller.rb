@@ -13,9 +13,9 @@ class PicksController < ApplicationController
 
   def history
     time = Time.now - 1.day
-    @history_picks = Pick.where('game_day <= ?',  time).paginate :page => params[:page],
-            :per_page => 10,
-            :order => "game_day DESC"
+    @history_picks = Pick.where('game_day <= ?',  time).paginate  :page => params[:page],
+                                                                  :per_page => 10,
+                                                                  :order => "game_day DESC"
     @categories = Category.all
     @page_title = "My Sports Gambler Pick History"
 
